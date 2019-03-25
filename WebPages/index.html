@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nim</title>
+    <link rel="stylesheet" type="text/css" href="../Css/stilark.css">
+
+  </head>
+
+
+  <body>
+
+    <header>
+          <ul>
+            <li><a class="navElement" href="index.html">Hjem</a></li>
+            <li><a class="navElement" href="regler.html">Regler</a></li>
+          </ul>
+
+
+    <div id="header-mid">
+      <h1>Nim</h1>
+    </div>
+  </header>
+
+
+<div class = "container">
+  <form id="myForm">
+
+    <p>Player 1:</p> <input type="text" id="player1"><br>
+    <p>Player 2:</p> <input type="text" id="player2"><br><br>
+    <p>Select the number of marbles:</p>
+    <select id="numOfBalls">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
+      <option value="35">35</option>
+      <option value="40">40</option>
+      <option value="45">45</option>
+      <option value="50">50</option>
+      <option value="55">55</option>
+      <option value="60">60</option>
+    </select>
+
+    <p>Select max grab:</p>
+    <select id="maxGrab">
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+
+    </select>
+
+   <br><br>
+    <input type="button" id="sButton" onclick="startGame()" value="Submit form">
+
+  </form>
+</div>
+
+<div id="game">
+
+  <h1 id="won"></h1>
+
+
+  <h1 id='counter'></h1>
+
+
+
+    <div id="player1Button">
+      <h1 id="firstPlayer"></h1>
+
+
+    </div>
+    <div id="player2Button">
+      <h1 id="secondPlayer"></h1>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+  </body>
+  <script src="../JavaScript/game.js" charset="utf-8"></script>
+  <script src="../JavaScript/nim.js" charset="utf-8"></script>
+</html>
